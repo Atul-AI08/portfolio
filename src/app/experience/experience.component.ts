@@ -13,7 +13,7 @@ export class ExperienceComponent {
 
   exps: any[] = [
     {
-      logo: '/assets/logo.webp',
+      logo: 'assets/logo.webp',
       role: 'Developer Intern @Fastcurve',
       start: 'June 2024',
       end: 'Present',
@@ -26,7 +26,7 @@ export class ExperienceComponent {
       url: '',
     },
     {
-      logo: '/assets/iitp_campus.webp',
+      logo: 'assets/iitp_campus.webp',
       role: 'UG Researcher @IIT Patna',
       start: 'June 2023',
       end: 'Present',
