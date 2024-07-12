@@ -1,0 +1,245 @@
+<nav>
+  <div
+    class="desktop"
+    [ngClass]="{ 'bg-white': theme === 'light', 'bg-dark': theme === 'dark' }"
+  >
+    <div class="d-flex justify-content-between align-items-center box-1">
+      <div
+        class="name"
+        [ngClass]="{
+          'name-light': theme === 'light',
+          'name-dark': theme === 'dark'
+        }"
+      >
+        Atul Kumar
+      </div>
+      <div class="navItems d-flex justify-content-center align-items-center">
+        <a
+          (click)="onScroll('about')"
+          [ngClass]="{
+            'txt-light': theme === 'light',
+            'txt-dark': theme === 'dark'
+          }"
+          >About</a
+        >
+        <a
+          (click)="onScroll('skills')"
+          [ngClass]="{
+            'txt-light': theme === 'light',
+            'txt-dark': theme === 'dark'
+          }"
+          >Skills</a
+        >
+        <a
+          (click)="onScroll('exp')"
+          [ngClass]="{
+            'txt-light': theme === 'light',
+            'txt-dark': theme === 'dark'
+          }"
+          >Experience</a
+        >
+        <a
+          (click)="onScroll('projects')"
+          [ngClass]="{
+            'txt-light': theme === 'light',
+            'txt-dark': theme === 'dark'
+          }"
+          >Projects</a
+        >
+        <a
+          (click)="onScroll('certificates')"
+          [ngClass]="{
+            'txt-light': theme === 'light',
+            'txt-dark': theme === 'dark'
+          }"
+          >Certificates</a
+        >
+        <div></div>
+        <div class="controls d-flex justify-content-center align-items-center">
+          @if (theme === 'light') {
+          <img
+            (click)="toggleTheme()"
+            style="padding: 6px"
+            src="/assets/header/light.svg"
+            alt="Theme"
+          />
+          } @else {
+          <img
+            (click)="toggleTheme()"
+            style="padding: 6px"
+            src="/assets/header/dark.svg"
+            alt="Theme"
+          />
+          }
+          <button
+            class="btn btn-dark cv"
+            [ngClass]="{
+              'cv-light': theme === 'light',
+              'cv-dark': theme === 'dark'
+            }"
+          >
+            Download CV
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="mobile"
+    [ngClass]="{ 'bg-white': theme === 'light', 'bg-dark': theme === 'dark' }"
+  >
+    <div class="box-1 d-flex justify-content-between align-items-center">
+      <div
+        class="name"
+        [ngClass]="{
+          'name-light': theme === 'light',
+          'name-dark': theme === 'dark'
+        }"
+      >
+        Atul Kumar
+      </div>
+      <div class="collapse d-flex justify-content-center align-items-center">
+        @if (theme === 'light') {
+        <img
+          (click)="showMenu = true"
+          src="/assets/header/collapse_light.svg"
+          alt="Expand"
+        />
+        } @else {
+        <img
+          (click)="showMenu = true"
+          src="/assets/header/collapse_dark.svg"
+          alt="Expand"
+        />
+        }
+      </div>
+    </div>
+  </div>
+  @if (showMenu) {
+  <div class="d-flex" style="justify-content: flex-end">
+    <div
+      class="mobile-menu d-flex align-items-start"
+      [ngClass]="{ 'bg-white': theme === 'light', 'bg-dark': theme === 'dark' }"
+    >
+      <div class="d-flex flex-column menu align-items-start w-100">
+        <div
+          class="d-flex justify-content-between align-self-stretch align-items-start logo"
+        >
+          <div
+            class="name"
+            [ngClass]="{
+              'name-light': theme === 'light',
+              'name-dark': theme === 'dark'
+            }"
+          >
+            AK
+          </div>
+          <div
+            class="d-flex justify-content-center align-items-center"
+            style="padding: 6px"
+          >
+            @if (theme === 'light') {
+            <img
+              (click)="showMenu = false"
+              src="/assets/header/close_light.svg"
+              alt="Close"
+            />
+            } @else {
+            <img
+              (click)="showMenu = false"
+              src="/assets/header/close_dark.svg"
+              alt="Close"
+            />
+            }
+          </div>
+        </div>
+        <div
+          class="d-flex flex-column align-self-stretch align-items-start links"
+        >
+          <a
+            (click)="showMenu = false; onScroll('about')"
+            [ngClass]="{
+              'txt-light': theme === 'light',
+              'txt-dark': theme === 'dark'
+            }"
+            >About</a
+          >
+          <a
+            (click)="showMenu = false; onScroll('skills')"
+            [ngClass]="{
+              'txt-light': theme === 'light',
+              'txt-dark': theme === 'dark'
+            }"
+            >Skills</a
+          >
+          <a
+            (click)="showMenu = false; onScroll('exp')"
+            [ngClass]="{
+              'txt-light': theme === 'light',
+              'txt-dark': theme === 'dark'
+            }"
+            >Experience</a
+          >
+          <a
+            (click)="showMenu = false; onScroll('projects')"
+            [ngClass]="{
+              'txt-light': theme === 'light',
+              'txt-dark': theme === 'dark'
+            }"
+            >Projects</a
+          >
+          <a
+            (click)="showMenu = false; onScroll('certificates')"
+            [ngClass]="{
+              'txt-light': theme === 'light',
+              'txt-dark': theme === 'dark'
+            }"
+            >Certificates</a
+          >
+        </div>
+        <div
+          class="d-flex flex-column align-self-stretch align-items-start actions"
+        >
+          <div
+            class="d-flex justify-content-between align-items-center align-self-stretch"
+          >
+            <div
+              class="theme"
+              [ngClass]="{
+                'txt-light': theme === 'light',
+                'txt-dark': theme === 'dark'
+              }"
+            >
+              Switch Theme
+            </div>
+            @if (theme === 'light') {
+            <img
+              (click)="toggleTheme()"
+              style="padding: 6px"
+              src="/assets/header/light.svg"
+              alt="Theme"
+            />
+            } @else {
+            <img
+              (click)="toggleTheme()"
+              style="padding: 6px"
+              src="/assets/header/dark.svg"
+              alt="Theme"
+            />
+            }
+          </div>
+          <button
+            class="btn btn-dark cv cv-light cv-dark"
+            [ngClass]="{
+              'cv-light': theme === 'light',
+              'cv-dark': theme === 'dark'
+            }"
+          >
+            Download CV
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  }
+</nav>

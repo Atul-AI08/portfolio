@@ -1,0 +1,179 @@
+<div
+  class="d-flex justify-content-between align-self-stretch desktop"
+  [ngClass]="{ 'bg-white': theme === 'light', 'bg-dark': theme === 'dark' }"
+>
+  <div class="col-7">
+    <div
+      class="d-flex flex-column justify-content-center align-items-start box-2"
+    >
+      <div
+        class="d-flex flex-column justify-content-center align-self-stretch align-items-start box-3"
+      >
+        <div
+          class="head"
+          [ngClass]="{
+            'head-light': theme === 'light',
+            'head-dark': theme === 'dark'
+          }"
+        >
+          Hi, I'm Atul 👋
+        </div>
+        <div
+          class="intro"
+          [ngClass]="{
+            'txt-light': theme === 'light',
+            'txt-dark': theme === 'dark'
+          }"
+        >
+          I'm an AI and data science enthusiast pursuing a B.Tech at IIT Patna.
+          My passion lies in solving real-world problems through machine
+          learning and intelligent systems and participating in research
+          activities. Additionally, I'm a skilled web developer proficient in
+          HTML, CSS, JavaScript, Angular, and MySQL, dedicated to creating
+          seamless and impactful applications.
+        </div>
+      </div>
+      <div
+        class="d-flex align-items-center align-self-stretch"
+        style="gap: 8px"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+        >
+          <path
+            d="M20 10C20 16 12 22 12 22C12 22 4 16 4 10C4 7.87827 4.84285 5.84344 6.34315 4.34315C7.84344 2.84285 9.87827 2 12 2C14.1217 2 16.1566 2.84285 17.6569 4.34315C19.1571 5.84344 20 7.87827 20 10Z"
+            [ngClass]="{
+              'svg-light': theme === 'light',
+              'svg-dark': theme === 'dark'
+            }"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z"
+            [ngClass]="{
+              'svg-light': theme === 'light',
+              'svg-dark': theme === 'dark'
+            }"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+        <div
+          class="loc"
+          [ngClass]="{
+            'txt-light': theme === 'light',
+            'txt-dark': theme === 'dark'
+          }"
+        >
+          Panipat, India
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-5 d-flex">
+    @if (theme === 'light') {
+    <img width="320px" src="/assets/hero/boy1.png" />
+    } @else {
+    <img width="320px" src="/assets/hero/boy3.png" />
+    }
+  </div>
+</div>
+
+<div
+  class="mobile"
+  [ngClass]="{ 'bg-white': theme === 'light', 'bg-dark': theme === 'dark' }"
+>
+  <div class="d-flex flex-column align-items-start box-2">
+    <div
+      class="d-flex justify-content-center align-items-center align-self-stretch"
+    >
+      @if (theme === 'light') {
+      <img width="280px" style="flex-shrink: 0" src="/assets/hero/boy2.png" />
+      } @else {
+      <img width="280px" style="flex-shrink: 0" src="/assets/hero/boy4.png" />
+      }
+    </div>
+    <div
+      class="d-flex flex-column justify-content-center align-items-start align-self-stretch"
+      style="gap: 48px"
+    >
+      <div
+        class="d-flex flex-column justify-content-center align-items-start align-self-stretch"
+        style="gap: 8px"
+      >
+        <div
+          class="head"
+          [ngClass]="{
+            'head-light': theme === 'light',
+            'head-dark': theme === 'dark'
+          }"
+        >
+          Hi, I'm Atul 👋
+        </div>
+        <div
+          class="intro align-self-stretch"
+          [ngClass]="{
+            'txt-light': theme === 'light',
+            'txt-dark': theme === 'dark'
+          }"
+        >
+          I'm an AI and data science enthusiast pursuing a B.Tech at IIT Patna.
+          My passion lies in solving real-world problems through machine
+          learning and intelligent systems and participating in research
+          activities. Additionally, I'm a skilled web developer proficient in
+          HTML, CSS, JavaScript, Angular, Node.js, and MySQL, dedicated to
+          creating seamless and impactful applications.
+        </div>
+      </div>
+      <div
+        class="d-flex align-items-center align-self-stretch"
+        style="gap: 8px"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+        >
+          <path
+            d="M20 10C20 16 12 22 12 22C12 22 4 16 4 10C4 7.87827 4.84285 5.84344 6.34315 4.34315C7.84344 2.84285 9.87827 2 12 2C14.1217 2 16.1566 2.84285 17.6569 4.34315C19.1571 5.84344 20 7.87827 20 10Z"
+            [ngClass]="{
+              'svg-light': theme === 'light',
+              'svg-dark': theme === 'dark'
+            }"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z"
+            [ngClass]="{
+              'svg-light': theme === 'light',
+              'svg-dark': theme === 'dark'
+            }"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+        <div
+          class="loc"
+          [ngClass]="{
+            'txt-light': theme === 'light',
+            'txt-dark': theme === 'dark'
+          }"
+        >
+          Panipat, India
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

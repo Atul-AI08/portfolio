@@ -1,0 +1,298 @@
+<div
+  class="desktop"
+  [ngClass]="{ 'bg-light': theme === 'light', 'bg-dark': theme === 'dark' }"
+>
+  <div class="d-flex flex-column box-2">
+    <div class="d-flex justify-content-center align-self-stretch">
+      <div
+        class="d-flex justify-content-center align-items-center box-3"
+        [ngClass]="{
+          'txt-light': theme === 'light',
+          'txt-dark': theme === 'dark',
+          'label-light': theme === 'light',
+          'label-dark': theme === 'dark'
+        }"
+      >
+        About me
+      </div>
+    </div>
+    <div class="d-flex align-self-stretch">
+      <div class="col-6 d-flex flex-column">
+        <img
+          [ngClass]="{
+            'img-light': theme === 'light',
+            'img-dark': theme === 'dark'
+          }"
+          src="/assets/about/me.jpeg"
+          alt=""
+        />
+        <div
+          class="img-bg"
+          [ngClass]="{
+            'img-bg-light': theme === 'light',
+            'img-bg-dark': theme === 'dark'
+          }"
+        ></div>
+      </div>
+      <div class="col-6 d-flex flex-column box-4">
+        <div
+          class="head"
+          [ngClass]="{
+            'head-light': theme === 'light',
+            'head-dark': theme === 'dark'
+          }"
+        >
+          Curious about me? Here you have it:
+        </div>
+        <p
+          class="txt"
+          [ngClass]="{
+            'txt-light': theme === 'light',
+            'txt-dark': theme === 'dark'
+          }"
+        >
+          I'm Atul Kumar, a dedicated and enthusiastic AI and data science
+          student at the Indian Institute of Technology (IIT) Patna. My journey
+          in artificial intelligence began in 2021. Since then, I've been
+          passionately diving into the complexities of machine learning, data
+          analysis, and intelligent systems. My academic endeavors and hands-on
+          project experiences have fueled my enthusiasm for creating innovative
+          solutions that blend technical precision and impactful results.
+        </p>
+        <p
+          class="txt"
+          [ngClass]="{
+            'txt-light': theme === 'light',
+            'txt-dark': theme === 'dark'
+          }"
+        >
+          In addition to my AI and data science expertise, I have a solid
+          foundation in web development. My proficiency in HTML, CSS,
+          JavaScript, and Angular allows me to create visually appealing and
+          user-friendly web interfaces. Combining my web development skills with
+          my knowledge of backend technologies like Node.js and MySQL, I can
+          develop full-stack applications that are both functional and
+          efficient. This skill set enables me to bridge the gap between
+          front-end user experience and backend data processing, creating
+          seamless and impactful digital products.
+        </p>
+        <p
+          class="txt"
+          [ngClass]="{
+            'txt-light': theme === 'light',
+            'txt-dark': theme === 'dark'
+          }"
+        >
+          I am very much a progressive thinker and enjoy working on products end
+          to end, from ideation all the way to development.
+        </p>
+        <p
+          class="txt"
+          [ngClass]="{
+            'txt-light': theme === 'light',
+            'txt-dark': theme === 'dark'
+          }"
+        >
+          When not immersed in code or research, I enjoy exploring new
+          technologies, reading blogs on the latest advances, and listening to
+          podcasts. My passion for AI and data science drives me to continuously
+          learn and evolve, aiming to contribute to cutting-edge advancements in
+          the field and make a meaningful impact through technology.
+        </p>
+        <p
+          class="txt"
+          [ngClass]="{
+            'txt-light': theme === 'light',
+            'txt-dark': theme === 'dark'
+          }"
+        >
+          Finally, some quick bits about me.
+        </p>
+        <div class="d-flex align-self-stretch align-items-startbox-5">
+          <div class="d-flex flex-column align-items-start bits">
+            <ul
+              [ngClass]="{
+                'txt-light': theme === 'light',
+                'txt-dark': theme === 'dark'
+              }"
+            >
+              <li>
+                <p class="txt">Avid learner</p>
+              </li>
+              <li>
+                <p class="txt">Project Enthusiast</p>
+              </li>
+            </ul>
+          </div>
+          <div class="d-flex flex-column align-items-start bits">
+            <ul
+              [ngClass]="{
+                'txt-light': theme === 'light',
+                'txt-dark': theme === 'dark'
+              }"
+            >
+              <li>
+                <p class="txt">Innovative researcher</p>
+              </li>
+              <li>
+                <p class="txt">Skilled web developer</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div
+  class="mobile"
+  [ngClass]="{ 'bg-light': theme === 'light', 'bg-dark': theme === 'dark' }"
+>
+  <div class="d-flex flex-column align-items-center box-2">
+    <div class="d-flex justify-content-center align-self-stretch">
+      <div
+        class="d-flex justify-content-center align-items-center box-3"
+        [ngClass]="{
+          'txt-light': theme === 'light',
+          'txt-dark': theme === 'dark',
+          'label-light': theme === 'light',
+          'label-dark': theme === 'dark'
+        }"
+      >
+        About me
+      </div>
+    </div>
+    <div
+      class="d-flex flex-column align-items-start align-self-stretch"
+      style="gap: 48px"
+    >
+      <div class="d-flex flex-column align-items-center align-self-stretch">
+        <img
+          [ngClass]="{
+            'img-light': theme === 'light',
+            'img-dark': theme === 'dark'
+          }"
+          src="/assets/about/me.jpeg"
+          alt=""
+        />
+        <div
+          class="img-bg"
+          [ngClass]="{
+            'img-bg-light': theme === 'light',
+            'img-bg-dark': theme === 'dark'
+          }"
+        ></div>
+      </div>
+      <div
+        class="d-flex flex-column align-items-start align-self-stretch box-4"
+      >
+        <div
+          class="head"
+          [ngClass]="{
+            'head-light': theme === 'light',
+            'head-dark': theme === 'dark'
+          }"
+        >
+          Curious about me? Here you have it:
+        </div>
+        <p
+          class="txt"
+          [ngClass]="{
+            'txt-light': theme === 'light',
+            'txt-dark': theme === 'dark'
+          }"
+        >
+          I'm Atul Kumar, a dedicated and enthusiastic AI and data science
+          student at the Indian Institute of Technology (IIT) Patna. My journey
+          in artificial intelligence began in 2021. Since then, I've been
+          passionately diving into the complexities of machine learning, data
+          analysis, and intelligent systems. My academic endeavors and hands-on
+          project experiences have fueled my enthusiasm for creating innovative
+          solutions that blend technical precision and impactful results.
+        </p>
+        <p
+          class="txt"
+          [ngClass]="{
+            'txt-light': theme === 'light',
+            'txt-dark': theme === 'dark'
+          }"
+        >
+          In addition to my AI and data science expertise, I have a solid
+          foundation in web development. My proficiency in HTML, CSS,
+          JavaScript, and Angular allows me to create visually appealing and
+          user-friendly web interfaces. Combining my web development skills with
+          my knowledge of backend technologies like Node.js and MySQL, I can
+          develop full-stack applications that are both functional and
+          efficient. This skill set enables me to bridge the gap between
+          front-end user experience and backend data processing, creating
+          seamless and impactful digital products.
+        </p>
+        <p
+          class="txt"
+          [ngClass]="{
+            'txt-light': theme === 'light',
+            'txt-dark': theme === 'dark'
+          }"
+        >
+          I am very much a progressive thinker and enjoy working on products end
+          to end, from ideation all the way to development.
+        </p>
+        <p
+          class="txt"
+          [ngClass]="{
+            'txt-light': theme === 'light',
+            'txt-dark': theme === 'dark'
+          }"
+        >
+          When not immersed in code or research, I enjoy exploring new
+          technologies, reading blogs on the latest advances, and listening to
+          podcasts. My passion for AI and data science drives me to continuously
+          learn and evolve, aiming to contribute to cutting-edge advancements in
+          the field and make a meaningful impact through technology.
+        </p>
+        <p
+          class="txt"
+          [ngClass]="{
+            'txt-light': theme === 'light',
+            'txt-dark': theme === 'dark'
+          }"
+        >
+          Finally, some quick bits about me.
+        </p>
+        <div class="d-flex align-self-stretch align-items-start box-5">
+          <div class="d-flex flex-column align-items-start bits">
+            <ul
+              [ngClass]="{
+                'txt-light': theme === 'light',
+                'txt-dark': theme === 'dark'
+              }"
+            >
+              <li>
+                <p class="txt">Avid learner</p>
+              </li>
+              <li>
+                <p class="txt">Project Enthusiast</p>
+              </li>
+            </ul>
+          </div>
+          <div class="d-flex flex-column align-items-start bits">
+            <ul
+              [ngClass]="{
+                'txt-light': theme === 'light',
+                'txt-dark': theme === 'dark'
+              }"
+            >
+              <li>
+                <p class="txt">Innovative researcher</p>
+              </li>
+              <li>
+                <p class="txt">Skilled web developer</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
