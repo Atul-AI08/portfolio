@@ -1,8 +1,8 @@
 <div
-  class="d-flex justify-content-between align-self-stretch desktop"
+  class="d-flex flex-md-row flex-column-reverse justify-content-between align-self-stretch main"
   [ngClass]="{ 'bg-white': theme === 'light', 'bg-dark': theme === 'dark' }"
 >
-  <div class="col-7">
+  <div class="col-md-7">
     <div
       class="d-flex flex-column justify-content-center align-items-start box-2"
     >
@@ -34,8 +34,8 @@
         </div>
       </div>
       <div
-        class="d-flex align-items-center align-self-stretch"
-        style="gap: 8px"
+        class="d-flex align-items-start align-self-stretch"
+        style="gap: 8px; padding-left: 5px"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -75,105 +75,40 @@
           Panipat, India
         </div>
       </div>
+      <div
+        class="d-flex align-items-start align-self-stretch"
+        style="gap: 18px; padding-left: 5px"
+      >
+        <a href="https://www.linkedin.com/in/atul-kumar-p391/" target="_blank">
+          <img width="24px" height="24px" src="assets/hero/linkedin.svg" alt="">
+        </a>
+        <a href="https://github.com/Atul-AI08" target="_blank">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 64 64"
+            fill="none"
+            [ngClass]="{ 'git-dark': theme === 'dark' }"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M32.0003 1.5C14.7435 1.5 0.75 15.4909 0.75 32.7503C0.75 46.5574 9.70415 58.2714 22.1208 62.4035C23.6826 62.6928 24.256 61.7256 24.256 60.9002C24.256 60.155 24.227 57.6933 24.2136 55.0821C15.5197 56.9725 13.6852 51.395 13.6852 51.395C12.2637 47.7829 10.2154 46.8224 10.2154 46.8224C7.3801 44.8828 10.4292 44.9227 10.4292 44.9227C13.5672 45.1431 15.2196 48.143 15.2196 48.143C18.0068 52.9205 22.5302 51.5393 24.3134 50.7408C24.5939 48.7211 25.4038 47.3425 26.2975 46.5621C19.3564 45.7719 12.0598 43.0923 12.0598 31.1181C12.0598 27.7063 13.2805 24.9185 15.2796 22.7301C14.9551 21.943 13.8855 18.7645 15.5823 14.46C15.5823 14.46 18.2065 13.6202 24.1784 17.6633C26.6711 16.9709 29.3445 16.6237 32.0003 16.6118C34.656 16.6237 37.3315 16.9709 39.8289 17.6633C45.7935 13.6202 48.414 14.46 48.414 14.46C50.115 18.7645 49.0449 21.943 48.7204 22.7301C50.7241 24.9185 51.9366 27.7063 51.9366 31.1181C51.9366 43.1208 44.626 45.7636 37.6673 46.5373C38.7882 47.507 39.7869 49.4088 39.7869 52.3244C39.7869 56.5057 39.7507 59.8709 39.7507 60.9002C39.7507 61.7318 40.3132 62.7063 41.8973 62.3994C54.3072 58.2626 63.25 46.5528 63.25 32.7503C63.25 15.4909 49.2586 1.5 32.0003 1.5ZM12.4542 46.0167C12.3854 46.1719 12.1412 46.2185 11.9186 46.1119C11.692 46.0099 11.5647 45.7983 11.6382 45.6425C11.7054 45.4826 11.9502 45.4381 12.1763 45.5452C12.4035 45.6472 12.5329 45.8609 12.4542 46.0167ZM13.9914 47.3882C13.8424 47.5264 13.551 47.4622 13.3533 47.2439C13.1489 47.026 13.1106 46.7347 13.2617 46.5944C13.4154 46.4562 13.698 46.5209 13.9029 46.7388C14.1073 46.9592 14.1472 47.2485 13.9914 47.3882ZM15.046 49.1432C14.8545 49.2761 14.5414 49.1514 14.3479 48.8735C14.1564 48.5956 14.1564 48.2624 14.352 48.1289C14.5461 47.9954 14.8545 48.1154 15.0506 48.3912C15.2416 48.6738 15.2416 49.007 15.046 49.1432ZM16.8294 51.1756C16.6581 51.3645 16.2933 51.3138 16.0263 51.056C15.7531 50.804 15.677 50.4464 15.8488 50.2575C16.0221 50.0681 16.389 50.1214 16.6581 50.3771C16.9293 50.6286 17.0121 50.9888 16.8294 51.1756ZM19.1344 51.8617C19.0588 52.1065 18.7075 52.2177 18.3535 52.1137C18.0001 52.0066 17.7687 51.7199 17.8402 51.4726C17.9136 51.2262 18.2666 51.1103 18.6231 51.2216C18.9761 51.3282 19.2079 51.6128 19.1344 51.8617ZM21.7576 52.1527C21.7664 52.4105 21.4662 52.6242 21.0946 52.6288C20.721 52.6371 20.4188 52.4286 20.4147 52.175C20.4147 51.9147 20.7081 51.703 21.0817 51.6968C21.4533 51.6896 21.7576 51.8966 21.7576 52.1527ZM24.3345 52.054C24.379 52.3055 24.1208 52.5637 23.7518 52.6325C23.3891 52.6988 23.0532 52.5435 23.0071 52.2941C22.9621 52.0364 23.225 51.7781 23.5872 51.7114C23.9567 51.6472 24.2874 51.7983 24.3345 52.054Z"
+              fill="#161614"
+            />
+          </svg>
+        </a>
+      </div>
     </div>
   </div>
-  <div class="col-5 d-flex">
+  <div class="col-md-5 d-flex flex-column align-items-center box-4">
     @if (theme === 'light') {
-    <img width="320px" src="assets/hero/boy1.png" />
+    <img class="img-light" src="assets/hero/boy1.png" />
+    <div class="img-bg img-bg-light"></div>
     } @else {
-    <img width="320px" src="assets/hero/boy3.png" />
+    <img class="img-dark" src="assets/hero/boy2.png" />
+    <div class="img-bg img-bg-dark"></div>
     }
-  </div>
-</div>
-
-<div
-  class="mobile"
-  [ngClass]="{ 'bg-white': theme === 'light', 'bg-dark': theme === 'dark' }"
->
-  <div class="d-flex flex-column align-items-start box-2">
-    <div
-      class="d-flex justify-content-center align-items-center align-self-stretch"
-    >
-      @if (theme === 'light') {
-      <img width="280px" style="flex-shrink: 0" src="assets/hero/boy2.png" />
-      } @else {
-      <img width="280px" style="flex-shrink: 0" src="assets/hero/boy4.png" />
-      }
-    </div>
-    <div
-      class="d-flex flex-column justify-content-center align-items-start align-self-stretch"
-      style="gap: 48px"
-    >
-      <div
-        class="d-flex flex-column justify-content-center align-items-start align-self-stretch"
-        style="gap: 8px"
-      >
-        <div
-          class="head"
-          [ngClass]="{
-            'head-light': theme === 'light',
-            'head-dark': theme === 'dark'
-          }"
-        >
-          Hi, I'm Atul 👋
-        </div>
-        <div
-          class="intro align-self-stretch"
-          [ngClass]="{
-            'txt-light': theme === 'light',
-            'txt-dark': theme === 'dark'
-          }"
-        >
-          I'm an AI and data science enthusiast pursuing a B.Tech at IIT Patna.
-          My passion lies in solving real-world problems through machine
-          learning and intelligent systems and participating in research
-          activities. Additionally, I'm a skilled web developer proficient in
-          HTML, CSS, JavaScript, Angular, Node.js, and MySQL, dedicated to
-          creating seamless and impactful applications.
-        </div>
-      </div>
-      <div
-        class="d-flex align-items-center align-self-stretch"
-        style="gap: 8px"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-        >
-          <path
-            d="M20 10C20 16 12 22 12 22C12 22 4 16 4 10C4 7.87827 4.84285 5.84344 6.34315 4.34315C7.84344 2.84285 9.87827 2 12 2C14.1217 2 16.1566 2.84285 17.6569 4.34315C19.1571 5.84344 20 7.87827 20 10Z"
-            [ngClass]="{
-              'svg-light': theme === 'light',
-              'svg-dark': theme === 'dark'
-            }"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-          <path
-            d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z"
-            [ngClass]="{
-              'svg-light': theme === 'light',
-              'svg-dark': theme === 'dark'
-            }"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-        </svg>
-        <div
-          class="loc"
-          [ngClass]="{
-            'txt-light': theme === 'light',
-            'txt-dark': theme === 'dark'
-          }"
-        >
-          Panipat, India
-        </div>
-      </div>
-    </div>
   </div>
 </div>

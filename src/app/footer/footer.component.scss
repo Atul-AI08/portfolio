@@ -1,6 +1,6 @@
 @import "../../styles.scss";
 
-.desktop {
+.main {
   padding: 96px 80px;
   .box-1 {
     padding: 0px 32px;
@@ -10,15 +10,13 @@
       gap: 16px;
 
       .box-3 {
-        padding: 4px 20px;
-
-        .btn-1 {
-          font-size: 16px;
-          font-style: normal;
-          font-weight: 500;
-          line-height: 20px;
-          border-radius: 12px;
-        }
+        padding: 5px 21px;
+        border-radius: 12px;
+        // font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px;
       }
 
       .txt {
@@ -72,62 +70,14 @@
   }
 }
 
-.mobile {
-  display: none !important;
-  padding: 64px 16px;
-
-  .box-2 {
-    gap: 16px;
-
-    .box-3 {
-      padding: 4px 20px;
-
-      .btn-1 {
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 20px;
-        border-radius: 12px;
-      }
-    }
-
-    .txt {
-      max-width: 576px;
-      align-self: stretch;
-      text-align: center;
-      font-size: 20px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 28px;
-    }
-  }
-  .box-5 {
-    .box-6 {
-      gap: 16px;
-      img {
-        cursor: pointer;
-      }
-      p {
-        text-align: center;
-        // font-family: Inter;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 40px;
-        letter-spacing: -0.72px;
-      }
-    }
-  }
-}
-
 .bg-dark {
   background-color: $gray-dark-default !important;
 }
 .bg-light-2 {
-  background-color: $gray-50 !important;
+  background-color: $gray-50;
 }
 .bg-dark-2 {
-  background-color: $gray-dark-50 !important;
+  background-color: $gray-dark-50;
 }
 .label-light {
   background-color: $gray-200;
@@ -225,11 +175,21 @@
 }
 
 @media screen and (max-width: 768px) {
-  .desktop {
-    display: none !important;
-  }
-  .mobile {
-    display: flex !important;
+  .main {
+    padding: 64px 16px;
+    .box-1 {
+      padding: 0;
+      gap: 24px;
+      .box-5 {
+        gap: 0;
+        .box-6 {
+          gap: 16px;
+          p {
+            font-size: 18px;
+          }
+        }
+      }
+    }
   }
   .box-7 {
     padding: 24px 0;

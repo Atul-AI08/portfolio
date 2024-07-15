@@ -105,16 +105,27 @@
 
 .mobile-menu {
   display: none !important;
-  position: absolute;
+  position: fixed;
   top: 0;
+  right: 0;
   width: 340px;
-  height: 667px;
+  height: 100vh;
   flex-shrink: 0;
   box-shadow: 0px 25px 25px 0px rgba(0, 0, 0, 0.15);
+  animation-name: slide-menu;
+  animation-duration: 300ms;
+  animation-timing-function: ease-in-out;
+
+  @keyframes slide-menu {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
 
   .menu {
-    height: 667px;
-
     .logo {
       padding: 16px;
 
@@ -136,10 +147,8 @@
     .links {
       gap: 16px;
       padding: 16px;
-      border-bottom: #f3f4f6;
 
       a {
-        color: #4b5563;
         // font-family: Inter;
         font-size: 16px;
         font-style: normal;
@@ -187,7 +196,9 @@
     }
   }
 }
-
+.menu-dark {
+  box-shadow: 0px 25px 25px 0px rgba(255, 255, 255, 0.15);
+}
 .bg-dark {
   background-color: $gray-dark-default !important;
 }
@@ -201,5 +212,6 @@
   }
   .mobile-menu {
     display: flex !important;
+    z-index: 1001;
   }
 }

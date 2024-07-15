@@ -1,6 +1,6 @@
 @import "../../styles.scss";
 
-.desktop {
+.main {
   padding: 96px 80px;
   .box-1 {
     padding: 0px 32px;
@@ -61,63 +61,6 @@
   }
 }
 
-.mobile {
-  display: none !important;
-  padding: 72px 16px;
-  .box-2 {
-    gap: 16px;
-
-    .box-3 {
-      border-radius: 12px;
-      padding: 5px 21px;
-      // font-family: Inter;
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: 20px;
-    }
-    .box-4 {
-      text-align: center;
-      // font-family: Inter;
-      font-size: 20px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 28px;
-    }
-  }
-  .box-5 {
-    flex-wrap: wrap;
-    gap: 24px;
-
-    .box-6 {
-      min-width: 300px;
-      padding: 48px;
-      gap: 24px;
-      flex: 1 0 0;
-      border-radius: 12px;
-      box-shadow: 0px 4px 3px 0px rgba(0, 0, 0, 0.07),
-        0px 2px 2px 0px rgba(0, 0, 0, 0.06);
-
-      .title {
-        text-align: center;
-        // font-family: Inter;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 28px;
-      }
-      .desc {
-        text-align: center;
-        // font-family: Inter;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 20px;
-      }
-    }
-  }
-}
-
 .bg-light {
   background-color: $gray-50 !important;
 }
@@ -149,21 +92,25 @@
   color: $gray-dark-600;
 }
 .link-light {
-  path{
+  path {
     stroke: $gray-600;
   }
 }
 .link-dark {
-  path{
+  path {
     stroke: $gray-dark-600;
   }
 }
 
 @media screen and (max-width: 1100px) {
-  .desktop {
-    display: none !important;
-  }
-  .mobile {
-    display: flex !important;
+  .main {
+    padding: 72px 16px;
+    .box-1 {
+      padding: 0;
+      gap: 24px;
+      .box-5 {
+        gap: 24px;
+      }
+    }
   }
 }

@@ -1,158 +1,25 @@
 <footer>
   <div
-    class="desktop"
+    class="main"
     [ngClass]="{ 'bg-white': theme === 'light', 'bg-dark': theme === 'dark' }"
   >
     <div class="box-1 d-flex flex-column">
       <div
         class="box-2 d-flex flex-column align-items-center align-self-stretch"
       >
+      <div class="d-flex justify-content-center align-self-stretch">
         <div
-          class="box-3 d-flex flex-column justify-content-center align-items-center"
-        >
-          <button
-            class="btn btn-1"
-            [ngClass]="{
-              'txt-light': theme === 'light',
-              'txt-dark': theme === 'dark',
-              'label-light': theme === 'light',
-              'label-dark': theme === 'dark'
-            }"
-          >
-            Get in touch
-          </button>
-        </div>
-        <div
-          class="d-flex flex-column justify-content-center align-items-center"
+          class="d-flex justify-content-center align-items-center box-3"
           [ngClass]="{
             'txt-light': theme === 'light',
             'txt-dark': theme === 'dark',
+            'label-light': theme === 'light',
+            'label-dark': theme === 'dark'
           }"
         >
-          <div class="txt">
-            What's next? Feel free to reach out to me if you're looking for a
-            developer, have a query, or simply want to connect.
-          </div>
+          Get in touch
         </div>
       </div>
-      <div
-        class="d-flex flex-column justify-content-center align-items-center box-5"
-      >
-        <div class="d-flex justify-content-center align-items-center box-6">
-          <svg
-            [ngClass]="{
-              'link-light': theme === 'light',
-              'link-dark': theme === 'dark'
-            }"
-            xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-            <path d="M26.6667 5.33337H5.33335C3.86059 5.33337 2.66669 6.52728 2.66669 8.00004V24C2.66669 25.4728 3.86059 26.6667 5.33335 26.6667H26.6667C28.1394 26.6667 29.3334 25.4728 29.3334 24V8.00004C29.3334 6.52728 28.1394 5.33337 26.6667 5.33337Z" stroke="#D1D5DB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M29.3334 9.33337L17.3734 16.9334C16.9617 17.1913 16.4858 17.3281 16 17.3281C15.5143 17.3281 15.0383 17.1913 14.6267 16.9334L2.66669 9.33337" stroke="#D1D5DB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-          <p
-            class="my-0"
-            [ngClass]="{
-            'head-light': theme === 'light',
-            'head-dark': theme === 'dark',
-          }"
-          >
-            atulkp391&#64;gmail.com
-          </p>
-          <button 
-            (click)="copyMail('atulkp391@gmail.com')"
-            class="copy"
-            [ngClass]="{
-              'copy-light': theme === 'light',
-              'copy-dark': theme === 'dark'
-            }"
-          >
-            <svg 
-              [ngClass]="{
-                'link-light': theme === 'light',
-                'link-dark': theme === 'dark'
-              }"
-              xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-              <path d="M26.6667 10.6666H13.3333C11.8606 10.6666 10.6667 11.8605 10.6667 13.3333V26.6666C10.6667 28.1394 11.8606 29.3333 13.3333 29.3333H26.6667C28.1394 29.3333 29.3333 28.1394 29.3333 26.6666V13.3333C29.3333 11.8605 28.1394 10.6666 26.6667 10.6666Z" stroke="#D1D5DB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M5.33332 21.3333C3.86666 21.3333 2.66666 20.1333 2.66666 18.6666V5.33329C2.66666 3.86663 3.86666 2.66663 5.33332 2.66663H18.6667C20.1333 2.66663 21.3333 3.86663 21.3333 5.33329" stroke="#D1D5DB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </button>
-          <div [ngClass]="{
-            'copied': copy_mail,
-            'copied-light': theme === 'light',
-            'copied-dark': theme === 'dark'
-          }"></div>
-        </div>
-        <div class="d-flex justify-content-center align-items-center box-6">
-          <svg 
-            [ngClass]="{
-              'link-light': theme === 'light',
-              'link-dark': theme === 'dark'
-            }"
-            xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-            <path d="M29.3333 22.56V26.56C29.3349 26.9313 29.2588 27.2989 29.11 27.6391C28.9613 27.9793 28.7431 28.2848 28.4695 28.5358C28.1958 28.7868 27.8728 28.9779 27.521 29.0969C27.1692 29.2159 26.7965 29.2601 26.4267 29.2266C22.3238 28.7808 18.3827 27.3788 14.92 25.1333C11.6985 23.0862 8.96713 20.3549 6.92001 17.1333C4.66665 13.6549 3.26434 9.69463 2.82668 5.5733C2.79336 5.20459 2.83718 4.83298 2.95535 4.48213C3.07351 4.13128 3.26344 3.80889 3.51303 3.53546C3.76263 3.26204 4.06642 3.04358 4.40507 2.894C4.74372 2.74441 5.1098 2.66698 5.48001 2.66663H9.48001C10.1271 2.66026 10.7544 2.8894 11.245 3.31134C11.7357 3.73328 12.0561 4.31923 12.1467 4.95997C12.3155 6.24006 12.6286 7.49694 13.08 8.70663C13.2594 9.18387 13.2982 9.70252 13.1919 10.2011C13.0855 10.6998 12.8385 11.1574 12.48 11.52L10.7867 13.2133C12.6848 16.5514 15.4486 19.3152 18.7867 21.2133L20.48 19.52C20.8425 19.1615 21.3002 18.9144 21.7988 18.8081C22.2975 18.7018 22.8161 18.7406 23.2933 18.92C24.503 19.3714 25.7599 19.6845 27.04 19.8533C27.6877 19.9447 28.2792 20.2709 28.7021 20.77C29.1249 21.269 29.3496 21.9061 29.3333 22.56Z" stroke="#D1D5DB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-          <p
-            class="my-0"
-            [ngClass]="{
-            'head-light': theme === 'light',
-            'head-dark': theme === 'dark',
-          }"
-          >
-            +91 8901098350
-          </p>
-          <button 
-            (click)="copyPhone('+918901098350')"
-            class="copy"
-            [ngClass]="{
-              'copy-light': theme === 'light',
-              'copy-dark': theme === 'dark'
-            }"
-          >
-            <svg 
-              [ngClass]="{
-                'link-light': theme === 'light',
-                'link-dark': theme === 'dark'
-              }"
-              xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-              <path d="M26.6667 10.6666H13.3333C11.8606 10.6666 10.6667 11.8605 10.6667 13.3333V26.6666C10.6667 28.1394 11.8606 29.3333 13.3333 29.3333H26.6667C28.1394 29.3333 29.3333 28.1394 29.3333 26.6666V13.3333C29.3333 11.8605 28.1394 10.6666 26.6667 10.6666Z" stroke="#D1D5DB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M5.33332 21.3333C3.86666 21.3333 2.66666 20.1333 2.66666 18.6666V5.33329C2.66666 3.86663 3.86666 2.66663 5.33332 2.66663H18.6667C20.1333 2.66663 21.3333 3.86663 21.3333 5.33329" stroke="#D1D5DB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </button>
-          <div [ngClass]="{
-            'copied': copy_phone,
-            'copied-light': theme === 'light',
-            'copied-dark': theme === 'dark'
-          }"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div
-    class="mobile justify-content-center"
-    [ngClass]="{ 'bg-white': theme === 'light', 'bg-dark': theme === 'dark' }"
-  >
-    <div
-      class="d-flex flex-column justify-content-center align-items-center align-self-stretch"
-      style="gap: 24px"
-    >
-      <div
-        class="box-2 d-flex flex-column align-items-center align-self-stretch"
-      >
-        <div
-          class="box-3 d-flex flex-column justify-content-center align-items-center"
-        >
-          <button
-            class="btn btn-1"
-            [ngClass]="{
-              'txt-light': theme === 'light',
-              'txt-dark': theme === 'dark',
-              'label-light': theme === 'light',
-              'label-dark': theme === 'dark'
-            }"
-          >
-            Get in touch
-          </button>
-        </div>
         <div
           class="d-flex flex-column justify-content-center align-items-center"
           [ngClass]="{

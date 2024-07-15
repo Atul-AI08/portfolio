@@ -1,6 +1,6 @@
 @import "../../styles.scss";
 
-.desktop {
+.main {
   padding: 96px 80px;
 
   .box-2 {
@@ -36,39 +36,28 @@
       line-height: 24px;
     }
   }
-  img {
-    margin: 0 auto;
-  }
-}
-
-.mobile {
-  display: none !important;
-  padding: 64px 16px;
-
-  .box-2 {
-    gap: 48px;
-    flex: 1 0 0;
-
-    .head {
-      // font-family: Inter;
-      font-size: 36px;
-      font-style: normal;
-      font-weight: 600;
-      line-height: 40px;
+  .box-4 {
+    img {
+      position: relative;
+      z-index: 10;
+      width: 320px;
+      margin: 0 auto;
     }
-    .intro {
-      // font-family: Inter;
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 24px;
+    .img-light {
+      border: 8px solid $gray-default;
     }
-    .loc {
-      //   font-family: Inter;
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 24px;
+    .img-dark {
+      border: 8px solid $gray-dark-default;
+    }
+    .img-bg {
+      position: relative;
+      z-index: 1;
+      height: 340px;
+      width: 300px;
+      top: -300px;
+      margin: 0 auto;
+      margin-bottom: -300px;
+      transform: translateX(50px);
     }
   }
 }
@@ -94,25 +83,76 @@
 .svg-dark {
   stroke: $gray-dark-600;
 }
-
-@media screen and (max-width: 768px) {
-  .desktop {
-    display: none !important;
+.img-bg-light {
+  background-color: $gray-200;
+}
+.img-bg-dark {
+  background-color: $gray-dark-200;
+}
+.git-dark {
+  path {
+    fill: #d1d5db;
   }
-  .mobile {
-    display: flex !important;
+}
+
+@media screen and (max-width: 767px) {
+  .main {
+    padding: 64px 16px;
+    flex-direction: column-reverse;
+    gap: 48px;
+
+    .box-2 {
+      gap: 48px;
+      height: auto;
+      max-width: 100%;
+      padding-left: 0;
+
+      .box-3 {
+        gap: 8px;
+
+        .head {
+          //   font-family: Inter;
+          font-size: 36px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 40px;
+          letter-spacing: -1.2px;
+        }
+      }
+    }
+    .box-4 {
+      img {
+        width: 240px;
+      }
+      .img-bg {
+        height: 240px;
+        width: 280px;
+        top: -220px;
+        margin-bottom: -220px;
+        transform: none;
+      }
+    }
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1100px) {
-  .desktop {
+  .main {
     padding: 90px 60px;
     .box-2 {
-      padding: 0;
+      padding-left: 0;
       padding-right: 20px;
     }
-    img {
-      padding-right: 20px;
+    .box-4 {
+      padding-right: 10px;
+      img {
+        width: 280px;
+      }
+      .img-bg {
+        height: 300px;
+        width: 260px;
+        top: -260px;
+        margin-bottom: -260px;
+      }
     }
   }
 }

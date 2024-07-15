@@ -26,4 +26,22 @@ export class HeaderComponent {
     this.theme = this.theme === 'light' ? 'dark' : 'light';
     this.onThemeChange();
   }
+  openMenu() {
+    this.showMenu = true;
+    document.body.style.overflow = 'hidden';
+  }
+  closeMenu() {
+    document.getElementsByClassName('mobile-menu').item(0)?.animate([
+      { transform: 'translateX(0)' },
+      { transform: 'translateX(100%)' }
+    ], {
+      duration: 300,
+      easing: 'ease-in-out',
+      fill: 'forwards'
+    });
+    setTimeout(() => {
+      this.showMenu = false;
+      document.body.style.overflow = 'auto';
+    }, 300);
+  }
 }
