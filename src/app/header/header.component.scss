@@ -67,11 +67,19 @@
           border-radius: 12px;
         }
         .cv-light {
-          color: $gray-50;
+          a {
+            color: $gray-50;
+            text-decoration: none;
+            @include underline-transition(0);
+          }
           background-color: $gray-900;
         }
         .cv-dark {
-          color: $gray-dark-50;
+          a {
+            color: $gray-dark-50;
+            text-decoration: none;
+            @include underline-transition(0);
+          }
           background-color: $gray-dark-900;
         }
       }
@@ -186,11 +194,19 @@
         border-radius: 12px;
       }
       .cv-light {
-        color: $gray-50;
+        a {
+          color: $gray-50;
+          text-decoration: none;
+          @include underline-transition(0);
+        }
         background-color: $gray-900;
       }
       .cv-dark {
-        color: $gray-dark-50;
+        a {
+          color: $gray-dark-50;
+          text-decoration: none;
+          @include underline-transition(0);
+        }
         background-color: $gray-dark-900;
       }
     }

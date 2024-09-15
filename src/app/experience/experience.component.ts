@@ -18,12 +18,12 @@ export class ExperienceComponent {
       start: 'June 2024',
       end: 'Present',
       line1:
-        'Developed multiple business tools using Angular, enhancing functionality and user experience.',
+        'Developed and implemented AI-based Face Recognition Technology for the Enkept product.',
       line2:
-        'Gained hands-on experience in modern web development practices and frameworks.',
+        'Built free tools in Angular for the Yukt product, improving customer efficiency in day-to-day operations.',
       line3:
-        'Implemented lazy loading in Angular applications to optimize performance and load times.',
-      url: '',
+        'Worked with teams to add new technologies to the company’s main products, providing solutions.',
+      url: 'https://drive.google.com/file/d/1jzWQUUGRffQ1ax3Nr_ffWmGzCpfE6z1J/view?usp=sharing',
     },
     {
       logo: 'assets/iitp_campus.webp',
@@ -33,7 +33,7 @@ export class ExperienceComponent {
       line1:
         'Utilized efficient knowledge distillation methods to improve medical image analysis accuracy by 2-6%.',
       line2:
-        'Published a research paper on medical image classification accepted at MICCAI 2024; two papers submitted in journals.',
+        'Published research papers on medical image classification accepted at Knowledge-Based Systems and MICCAI 2024.',
       line3: 'Currently working on stereotype evaluation in language models.',
       url: 'https://drive.google.com/file/d/1C2YN2TEF4QcsN3osUDZxj0w50Ous-P61/view?usp=sharing',
     },
