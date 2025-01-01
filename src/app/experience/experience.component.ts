@@ -34,7 +34,7 @@ export class ExperienceComponent {
         'Utilized efficient knowledge distillation methods to improve medical image analysis accuracy by 2-6%.',
       line2:
         'Published research papers on medical image classification accepted at Knowledge-Based Systems and MICCAI 2024.',
-      line3: 'Currently working on stereotype evaluation in language models.',
+      line3: 'Currently working on optimizing federated learning frameworks for improved performance and scalability.',
       url: 'https://drive.google.com/file/d/1C2YN2TEF4QcsN3osUDZxj0w50Ous-P61/view?usp=sharing',
     },
   ];

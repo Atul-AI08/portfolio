@@ -13,6 +13,13 @@ export class ProjectsComponent {
   showMore: boolean = false;
   projects1: any[] = [
     {
+      img: 'assets/projects/recipe.png',
+      title: 'Context Aware Recipe Generator',
+      desc: 'The project implements an AI-powered recipe transformation tool designed to customize recipes based on individual dietary preferences, skill levels, and serving sizes. It leverages advanced AI models to suggest ingredient substitutions and provide personalized cooking instructions, ensuring the dish fits specific needs like vegan, gluten-free, or low-carb diets.',
+      tech_stack: ['FastAPI', 'LangChain', 'Ollama LLM', 'ChromaDB', 'PyTorch', 'Angular'],
+      url: 'https://github.com/Atul-AI08/Context-Aware-Recipe-Generator',
+    },
+    {
       img: 'assets/projects/fl.svg',
       title: 'Federated Learning',
       desc: 'The project implements sentiment analysis using neural networks in a federated setting with PyTorch. We utilized the Sentiment140 and Large Movie Review datasets, along with pre-trained word vectors from GoogleNews-vectors-negative300, to enhance training efficiency. For model selection, we utilize the bidirectional LSTM architecture.',
@@ -33,21 +40,21 @@ export class ProjectsComponent {
       ],
       url: 'https://github.com/Atul-AI08/estore',
     },
+  ];
+  projects2: any[] = [
+    // {
+    //   img: 'assets/projects/smilechat.png',
+    //   title: 'SmileChat',
+    //   desc: 'The project showcases a comprehensive web application designed for seamless communication. It includes features such as video conferencing, text and audio messaging, group chats, and file sharing. Users can also customize their profiles, enhancing the virtual communication experience. The application aims to provide a robust and versatile platform for all communication needs.',
+    //   tech_stack: ['Next.js', 'Node.js', 'Express.js', 'Tailwind', 'Firebase'],
+    //   url: 'https://github.com/Atul-AI08/SmileChat',
+    // },
     {
       img: 'assets/projects/translate.svg',
       title: 'Lingo Blend',
       desc: 'The project provides Python tools for classifying and translating Bengali, Hindi, Punjabi, Tamil, and Telugu texts. It uses the MuRIL model for language classification, IndicXlit for transliteration, and the NLLB-200 model for English translation, showcasing advanced NLP techniques for Indian languages.',
       tech_stack: ['Python', 'PyTorch', 'Hugging Face', 'Jupyter Notebook'],
       url: 'https://github.com/Atul-AI08/Lingo-Blend',
-    },
-  ];
-  projects2: any[] = [
-    {
-      img: 'assets/projects/smilechat.png',
-      title: 'SmileChat',
-      desc: 'The project showcases a comprehensive web application designed for seamless communication. It includes features such as video conferencing, text and audio messaging, group chats, and file sharing. Users can also customize their profiles, enhancing the virtual communication experience. The application aims to provide a robust and versatile platform for all communication needs.',
-      tech_stack: ['Next.js', 'Node.js', 'Express.js', 'Tailwind', 'Firebase'],
-      url: 'https://github.com/Atul-AI08/SmileChat',
     },
     {
       img: 'assets/projects/time.png',
